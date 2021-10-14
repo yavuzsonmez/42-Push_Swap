@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 13:14:32 by ysonmez           #+#    #+#             */
-/*   Updated: 2021/10/14 11:01:58 by home             ###   ########.fr       */
+/*   Updated: 2021/10/14 11:13:00 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,17 +101,17 @@ int			push(t_list **stack_1, t_list **stack_2);
 int			rotate(t_list **stack);
 int			rev_rotate(t_list **stack);
 
-# define	SA 0
-# define	SB 1
-# define	SS 2
-# define	PA 3
-# define	PB 4
-# define	RA 5
-# define	RB 6
-# define	RR 7
-# define	RRA 8
-# define	RRB 9
-# define	RRR 10
+# define SA 0
+# define SB 1
+# define SS 2
+# define PA 3
+# define PB 4
+# define RA 5
+# define RB 6
+# define RR 7
+# define RRA 8
+# define RRB 9
+# define RRR 10
 
 /*	Free data fonctions */
 

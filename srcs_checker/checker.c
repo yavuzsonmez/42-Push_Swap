@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 16:17:43 by ysonmez           #+#    #+#             */
-/*   Updated: 2021/10/13 20:25:07 by home             ###   ########.fr       */
+/*   Updated: 2021/10/14 11:18:32 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,11 +117,23 @@ int	main(int argc, char **argv)
 		return (-1);
 	arr = read_push_swap();
 	if (arr == NULL)
+	{
 		ft_putstr_fd("Error\n", 1);
+		ft_memfreeall((void **)arr);
+		return (-1);
+	}
 	if (!(verify_inputs(arr)))
+	{
 		ft_putstr_fd("Error\n", 1);
+		ft_memfreeall((void **)arr);
+		return (-1);
+	}
 	if (!(tester(arr, argv, 0)))
+	{
 		ft_putstr_fd("Error\n", 1);
+		ft_memfreeall((void **)arr);
+		return (-1);
+	}
 	ft_memfreeall((void **)arr);
 	return (0);
 }
