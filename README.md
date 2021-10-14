@@ -1,0 +1,4 @@
+- Creating a linked list (which is our stack A), based on the parsed args (First arg = Top is at the top of the stock)
+- Creating functions for different operations of push_swap
+- Sorting the Stack A using optimized algorithm with operations functions and a new empty stack B
+- Free Stack A and B
