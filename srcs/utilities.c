@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utilities.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: ysonmez <ysonmez@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 21:05:33 by ysonmez           #+#    #+#             */
-/*   Updated: 2021/10/13 19:48:00 by home             ###   ########.fr       */
+/*   Updated: 2021/10/15 16:59:33 by ysonmez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ void	free_data(t_list **stack_a, t_list **stack_b, char **arr)
 int	ft_error_free(t_list **stack_a, t_list **stack_b, char **arr)
 {
 	free_data(stack_a, stack_b, arr);
-	ft_putstr_fd("ERROR\n", 1);
+	ft_putstr_fd("Error\n", 1);
 	return (-1);
 }
 

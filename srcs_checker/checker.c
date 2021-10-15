@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   checker.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: ysonmez <ysonmez@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 16:17:43 by ysonmez           #+#    #+#             */
-/*   Updated: 2021/10/14 11:18:32 by home             ###   ########.fr       */
+/*   Updated: 2021/10/15 17:02:15 by ysonmez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,19 +118,19 @@ int	main(int argc, char **argv)
 	arr = read_push_swap();
 	if (arr == NULL)
 	{
-		ft_putstr_fd("Error\n", 1);
+		ft_putstr_fd("Error\n", 2);
 		ft_memfreeall((void **)arr);
 		return (-1);
 	}
 	if (!(verify_inputs(arr)))
 	{
-		ft_putstr_fd("Error\n", 1);
+		ft_putstr_fd("Error\n", 2);
 		ft_memfreeall((void **)arr);
 		return (-1);
 	}
 	if (!(tester(arr, argv, 0)))
 	{
-		ft_putstr_fd("Error\n", 1);
+		ft_putstr_fd("Error\n", 2);
 		ft_memfreeall((void **)arr);
 		return (-1);
 	}

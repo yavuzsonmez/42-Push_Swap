@@ -6,7 +6,7 @@
 /*   By: ysonmez <ysonmez@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 13:44:51 by ysonmez           #+#    #+#             */
-/*   Updated: 2021/10/11 16:20:21 by ysonmez          ###   ########.fr       */
+/*   Updated: 2021/10/15 16:56:25 by ysonmez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ static int	parse_each_input(char *str)
 	int	i;
 
 	i = 0;
-	if (str[i] == '+' || str[i] == '-')
+	if ((str[i] == '+' || str[i] == '-') && ft_isdigit(str[i + 1]))
 		i++;
 	while (str[i] != '\0')
 	{
